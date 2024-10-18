@@ -1,164 +1,27 @@
 @import "nulling.scss";
 @font-face{
     font-family: Figtree;
-    src: url(/fonts/Figtree-VariableFont_wght.ttf)
+    src: url(/fonts/Figtree-Italic-VariableFont_wght.ttf)
 }
 
 *{
     box-sizing: border-box;
     font-family: Figtree;
 }
-
 .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    background: #F4D04E;
 }
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    width: 384px;
-    height: 522px;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 20px;
-    box-shadow: 8px 8px 0px #000000;
-    gap: 20px;
+.profile {
 
-		&__image {
-            img{
-                border-radius: 10px;
-            }
-        }
+		&__image {}
 
-		&__author {
-            width: 129px;
-            height: 32px;
-            display: flex;
-            align-items: center;
+		&__content {}
 
-            img{
-                width: 32px;
-                height: 32px;
-            }
-            p{
-                padding: 0 0 0 10px;
-                font-weight: 800;
-             
-            }
-        }
+		&__name {}
+
+		&__location {}
+
+		&__bio {}
+
+		&__links {}
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-
-    &__btn {
-        padding: 4px 12px;
-        background-color: #F4D04E;
-        border-radius: 4px;
-        font-weight: 700;
-        width: 82px;
-        height: 29px;
-        font-size: 14px;
-        display: block;
-    }
-
-    &__date {
-        font-weight:400;
-        font-size: 14px;
-        line-height: 150%;
-    }
-
-    &__title {
-        font-size: 24px;
-        font-weight: 800;
-
-        &:hover{
-            color: #F4D04E;
-        }
-    }
-
-    &__text {
-        width: 336px;
-        height: 72px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        color:#6B6B6B;
-
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper{
-
-       display: flex;
-        align-items: center;
-        background-color: #f2843a;
-
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 20px;
-        gap: 25px;
-      
-        max-width: 327px;
-        max-height: 501px;
-       
-        &__image {
-           
-            img{
-                max-width: 100%;
-                max-height: auto;
-                border-radius: 10px;
-            }
-        }
-        .content {
-            display: flex;
-			justify-content: center;
-			flex-direction: column;
-
-            &__btn {}
-    
-            &__date {
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 120%;
-            }
-    
-            &__title {
-                font-size: 18px;
-            }
-    
-            &__text {
-                flex: 1 1 auto;
-                max-width: 300px;
-                height: 72px;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 150%;
-                color:#6B6B6B;
-            }
-    }
-    
-    }
-}
-
-
-
-
 

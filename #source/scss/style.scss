@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
 }
@@ -83,8 +83,8 @@
 }
 @media screen and (max-width: 768px){
     .profile{
-        width: 300px;
-        height: 470px;
+        min-width: 327px;
+        height: 490px;
         gap: 5px;
     }
     .profile__image{
@@ -97,13 +97,15 @@
     }
     .profile__location{
         font-size: 12px;
+        
     }
     .profile__links{
         
         button{
-            height: 40px;
-            width: 250px;
+            height: 45px;
+            width: 300px;
             font-size: 14px;
+            font-weight: 600;
         }
     }
    

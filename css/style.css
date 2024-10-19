@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(36, 36, 36);
 }
 .profile__image {
-  padding: 50px 0 0 0;
+  margin: 50px 0 0 0;
 }
 .profile__image img {
   width: 100px;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .profile__name {
   font-size: 20px;
   font-weight: 500;
-  padding-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 .profile__location {
   font-size: 14px;
@@ -159,4 +159,27 @@ h1, h2, h3, h4, h5, h6 {
 .profile__links button:hover {
   color: rgb(0, 0, 0);
   background-color: hsl(75, 94%, 57%);
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    width: 300px;
+    height: 470px;
+    gap: 5px;
+  }
+  .profile__image {
+    margin: 20px 0 0 0;
+  }
+  .profile__image img {
+    width: 70px;
+    height: 70px;
+  }
+  .profile__location {
+    font-size: 12px;
+  }
+  .profile__links button {
+    height: 40px;
+    width: 250px;
+    font-size: 14px;
+  }
 }
